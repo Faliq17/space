@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(146, 201, 116) 50%, rgb(120, 161, 189) 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255, 255, 255, 0.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:60%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+.content h2{
+  color: rgb(255, 0, 0);
+}
+.content tr td{
+  font-size: 20px;
+}
+  body {
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      color: #000000;
+
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-color: #484a47;
+      font-size: 12px;
+      
+    }
+    
+    .sidenav {
+      float: left;
+      height: 60px;
+      max-width: 600px;
+    }
+    
+    nav .sidenav ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+  }
+  nav .sidenav ul li{
+      list-style-type: none;
+      float: left;
+      line-height: 60px;
+  }
+  nav ul li a{
+      color: #fff;
+      text-align: center;
+      padding: 0px 16px 0px 16px ;
+      text-decoration: none;
+  }
+  nav ul li a:hover{
+      text-decoration: underline;
+  }
+    .main {
+     
+      margin-left: 50px; /* Same as the width of the sidenav */
+      font-size: 22px;
+    }
+    header .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width: 100%;
+    background-color: rgb(19, 19, 19);
+    opacity: 80%;
+    z-index: -1;
+}
+    .register-button {
+  display: inline-block;
+  padding: 15px 23px;
+  font-size: 25px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #3a8b3d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.register-button:hover {background-color: #98cd9a}
+
+.register-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
+}
+.login-button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 25px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #3a8b3d;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 9px #999;
+}
+
+.login-button:hover {background-color: #98cd9a}
+
+.login-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
+}
+    
+    @media screen and (max-height: 450px) {
+      
+    }
+  
+  
+  </style>
+  </head>
+<body>
+
+  <nav>
+    <div class="sidenav">
+      <header id="home">
+   
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+
+
+        </ul>
+
+    </div>
+</div>
+</nav>
+</div>
+
+
+<div class="main">
+  <br><br><h1><center>WELCOME TO DISCUSSION ROOM RESERVATION WEBSITE</center></h1><br><br>
+
+
+  <br><br><br> <br><br><br> <br><br><br>
+ 
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+
+<div class="content">
+  <form method="POST" action="process.php">
+ 
+    <h2>LOGIN AGAIN !</h2>
+   
+  <table width="50%">
+  <tr>
+    <td colspan="2">DATA NOT FOUND </td>
+    
+  </tr>
+  <tr>
+    <td colspan="2">WRONG USERNAME OR PASSWORD</td>
+   </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+   </tr>
+   <tr>
+    <td>ID Number</td>
+    <td> <input type="text" placeholder="Enter ID" name="username" id="username"required></td>
+   </tr>
+   <tr>
+    <td>Password</td>
+    <td> <input type="password" placeholder="Enter Password" name="password" id="password" required></td>
+     </tr>
+   <tr>
+    <td colspan="2">
+      <center><button type="button" class="cancelbtn" name="cancel">Cancel</button> &nbsp; &nbsp; &nbsp; <button type="submit" class="signupbtn" name="login">Login</button> </center>
+   </td>
+  </tr>
+  </table>
+
+    
+</form>
+
+</div>
+   
+</body>
+</html> 

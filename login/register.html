@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternSpace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    background-image: url('bcg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#myHeader {
+    background-color: #212529;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #212529;
+    padding: 15px 0;
+    z-index: 100;
+}
+
+#myHeader .logo {
+    width: 100px;
+    height: auto;
+}
+
+#myHeader nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#myHeader nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+#myHeader nav ul li a:hover {
+    background-color: #333;
+}
+
+#myHeader .sign a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid white;
+    margin-left: 8px;
+}
+
+#myHeader .sign a:hover {
+    background-color: #333
+}
+
+.login-form {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    background-color:#0d840b;
+    margin: 100px;
+    float: right;
+    width: 25%;
+
+    padding-left: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.1);
+    width: 350px;
+    box-shadow: 5px 5px 5px 5px rgba(255, 254, 254, 0.636);
+ 
+}
+
+.login-form label {
+    font-weight:normal;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: none;
+}
+
+.login-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+
+.signupbtn:hover {background-color: #d8a303}
+
+.signupbtn:active {
+  background-color: #ffd103;
+  box-shadow: 0 4px #999;
+  transform: translateY(6px);
+
+}
+.reset{
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 13px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #000000;
+  background-color: rgb(225, 207, 9);
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 3px #999;
+}
+.reset:hover {background-color: #d8a303}
+
+.reset:active {
+  background-color: #ffd103;
+  box-shadow: 0 4px #999;
+  transform: translateY(6px);
+
+}
+
+
+</style>
+<body>
+    <header id="myHeader">
+        <img src="logo.png" alt="Logo UITM" class="logo">
+        <nav>
+            <ul>
+                <li><a href="../index.php">HOME</a></li>
+                <li><a href="#">FIND INTERNSHIP</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACTS</a></li>
+            </ul>
+        </nav>
+        <div class="sign">
+            <a href="login/login.html">SIGN IN</a>
+            <a href="#">SIGN UP</a>
+        </div>  
+    </header>
+
+
+
+  <form method="POST" action="index.php" class="login-form">
+   
+    <input type="hidden" name="username" value="Register">
+
+       <center> <h4>Register</h4></center>
+          <label for="username">Username   :</label>
+          <input type="text" name="username" required placeholder="No. matric/ staff id"><br>
+  
+          <label for="cars">Choose your level :</label>
+          <select name="level_id" id="level_id">
+            <option value="1">Student</option>
+            <option value="2">Academic Supervisor</option>
+            <option value="3">Industrial Supervisor</option>
+            <option value="4">Coordinator</option>
+          </select>
+          <br><br>
+  
+          <label for="name">Name :</label>
+          <input type="text" name="name" required placeholder=" Full name "><br>
+  
+          <label for="address">Address :</label>
+          <input type="text" name="address" required placeholder="Full address"><br>
+  
+          <label for="phoneNo">Phone No :</label>
+          <input type="text" name="phoneNo" required placeholder="Phone no."><br>
+  
+          <label for="email">Email:</label>
+          <input type="email" name="email" required placeholder="xxx@gmail.com"><br><br>
+  
+  
+          <label for="password">Password:</label>
+          <input type="password" name="password" required placeholder="password"><br>
+          
+ 
+  
+  
+  <center><button type="button" class="reset" name="reset">Reset</button> &nbsp;  <button type="submit" class="signupbtn" name="submit">Sign Up</button> </center>   
+      </form>
+
+
+      
+      
+</body>
+</html>
+
+
+
+        
+        
